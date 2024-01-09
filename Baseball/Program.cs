@@ -8,7 +8,7 @@
             int Com = rand.Next(1, 9);
             return Com;
         }
-        public static void ComSelect()
+        public static int[] ComSelect()
         {
             int Com1 = Random();
             int Com2 = Random();
@@ -21,15 +21,19 @@
             while (Com4 == Com1 || Com4 == Com2 || Com4 == Com3)
             { Com4 = Random(); }
 
-            Console.WriteLine($"{Com1}  {Com2}  {Com3}  {Com4}");
+            int[] ComS = new int[4] 
+            { Com1, Com2, Com3, Com4 };
 
-            return;
+            //Console.WriteLine($"{Com1}  {Com2}  {Com3}  {Com4}");
+
+            return ComS;
         }
 
         static void Main(string[] args)
         {
             ComSelect();
-            
+            ComS[];
+            Console.WriteLine($"배열의 0번째 요소 : {ComS[0]}");
         }
     }
 }
