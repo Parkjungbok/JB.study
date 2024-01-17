@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace JB.study
 {
     internal class Stack
-    {
+    {/*
         //<괄호 검사기를 구현하자>
         //괄호 : 괄호가 바르게 짝지어졌다는 것은 열렸으면 짝지어서 닫혀야 한다는 뜻
 
@@ -23,27 +23,28 @@ namespace JB.study
             Stack<char> stack = new Stack<char>();
 
             foreach (char c in text)
-            {                
+            {
                 if (c == '(' || c == '{' || c == '[')
                 {
                     stack.Push(c);
                 }
-               else
+                else
                 {
                     return false;
                 }
 
                 return true;
-        }
+            }
 
-        static void Main()
-        {
-            do
+            static void Main()
             {
-                string text = Console.ReadLine();
-                IsOk(text);
-            } while (true);
-        }
+                do
+                {
+                    string text = Console.ReadLine();
+                    IsOk(text);
+                } while (true);
+            }
 
+        }*/
     }
 }
